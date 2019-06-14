@@ -1,1 +1,8 @@
-# all_in_one_CSGO
+# all in one CSGO
+
+## Usage
+
+```
+$ chmod +x create.sh
+$ ./create.sh
+```
