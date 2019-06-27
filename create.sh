@@ -48,4 +48,4 @@ read -p "GSLT token : " gslt
 read -p "External IPv4 : " ip
 file="/home/csgoserver/lgsm/config-lgsm/csgoserver/common.cfg"
 echo -n -e "\033[1;36mcsgoserver\033[0m "
-su -c "echo -e 'ip=\"'$ip'\"' >> $file && echo -e 'gslt=\"'$gslt'\"' >> $file && echo -e 'gametype=\"0\"\ngamemode=\"1\"\ntickrate=\"128\"' >> $file && cd /home/csgoserver && wget https://raw.githubusercontent.com/jffz/docker-ebot/master/docker-compose.yml && sed -i 's/xxx.xxx.xxx.xxx/$ip/g' docker-compose.yml && docker-compose up -d"
+su csgoserver -c "echo -e 'ip=\"'$ip'\"' >> $file && echo -e 'gslt=\"'$gslt'\"' >> $file && echo -e 'gametype=\"0\"\ngamemode=\"1\"\ntickrate=\"128\"' >> $file && cd /home/csgoserver && wget https://raw.githubusercontent.com/jffz/docker-ebot/master/docker-compose.yml && sed -i 's/xxx.xxx.xxx.xxx/$ip/g' docker-compose.yml && docker-compose up -d"
