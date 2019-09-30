@@ -1,4 +1,4 @@
-# all in one CSGO
+# All in one script for CSGO server creation
 
 ## Usage
 
